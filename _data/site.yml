@@ -16,7 +16,6 @@ accommodation:
   name: "IIT Delhi Guest House"
   location: "IIT-D Sonipat Campus"
   price: "INR 1,500 per night"
-  note: "On a chargeable basis"
 
 registration:
   free: true
