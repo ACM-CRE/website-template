@@ -1,0 +1,320 @@
+// Custom styles for ACM COMPUTE Regional template
+
+// Skip link for accessibility
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: $primary;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 9999;
+  transition: top 0.3s;
+
+  &:focus {
+    top: 0;
+  }
+}
+
+// Hero section
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 6rem 0;
+  position: relative;
+  color: #fff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      135deg,
+      rgba($primary, 0.9) 0%,
+      rgba($dark, 0.8) 100%
+    );
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    @media (min-width: 768px) {
+      font-size: 3.5rem;
+    }
+  }
+
+  .lead {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+  }
+
+  .event-date {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  .event-location {
+    font-size: 1.125rem;
+    opacity: 0.9;
+  }
+}
+
+// Schedule table
+.schedule-table {
+  th {
+    background-color: $light;
+    font-weight: 600;
+  }
+
+  .session-type {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: $border-radius-sm;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+
+    &--keynote {
+      background-color: rgba($primary, 0.1);
+      color: $primary;
+    }
+
+    &--workshop {
+      background-color: rgba($success, 0.1);
+      color: $success;
+    }
+
+    &--break {
+      background-color: rgba($secondary, 0.1);
+      color: $secondary;
+    }
+
+    &--ceremony {
+      background-color: rgba($warning, 0.15);
+      color: darken($warning, 25%);
+    }
+
+    &--discussion {
+      background-color: rgba($info, 0.15);
+      color: darken($info, 25%);
+    }
+  }
+
+  .session-time {
+    white-space: nowrap;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+// Speaker list
+.speaker-card {
+  text-align: center;
+  padding: 1.5rem;
+
+  .speaker-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid $light;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .speaker-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .speaker-name {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .speaker-affiliation {
+    color: $secondary;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .speaker-role {
+    color: $primary;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+}
+
+// Sponsor grid
+.sponsor-tier {
+  margin-bottom: 3rem;
+
+  h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: $secondary;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+}
+
+.sponsor-logo {
+  max-height: 60px;
+  width: auto;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+}
+
+.sponsor-placeholder {
+  padding: 1rem 1.5rem;
+  background-color: $light;
+  border-radius: $border-radius;
+  display: inline-block;
+}
+
+// Embed form
+.embed-form {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+
+  iframe {
+    width: 100%;
+    min-height: 500px;
+    border: none;
+    border-radius: $border-radius;
+  }
+}
+
+// Copy button
+.copy-btn {
+  position: relative;
+
+  &.copied::after {
+    content: attr(data-copied-text);
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $dark;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: $border-radius-sm;
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+}
+
+// Language switcher
+.language-switcher {
+  .dropdown-toggle {
+    font-size: 0.875rem;
+  }
+}
+
+// Footer
+.site-footer {
+  background-color: $dark;
+  color: rgba(#fff, 0.7);
+  padding: 3rem 0 2rem;
+
+  h5 {
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: rgba(#fff, 0.7);
+
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+  }
+
+  .footer-copyright {
+    font-size: 0.875rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(#fff, 0.1);
+  }
+}
+
+// Venue map
+.venue-map {
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+  }
+}
+
+// Spread the word sections
+.share-section {
+  background-color: $light;
+  border-radius: $border-radius;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+
+  h3 {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+
+  pre {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: $border-radius-sm;
+    padding: 1rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 0.875rem;
+  }
+}
+
+// Accessibility: visible focus rings
+*:focus-visible {
+  outline: $focus-ring-width solid $focus-ring-color;
+  outline-offset: 2px;
+}
+
+// Reduced motion preference
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
