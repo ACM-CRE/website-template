@@ -1,48 +1,59 @@
-- time: "09:00"
-  end_time: "09:30"
-  title: "Registration & Welcome Coffee"
-  type: break
+# Schedule for ACM COMPUTE Regional Event at Ashoka University
+# Saturday, March 21, 2026 | 9:30 AM - 6:00 PM
+#
+# Note: No formal tea breaks. Tea and snacks available at 12:00 and 15:30
+# during workshop sessions (grab and head back).
 
 - time: "09:30"
   end_time: "10:00"
-  title: "Opening Ceremony"
-  type: ceremony
-  speaker: jane-doe
+  title: "Registration"
+  type: break
+  description: "Registration, morning tea, and networking"
 
 - time: "10:00"
   end_time: "11:00"
-  title: "Keynote: The Future of Computing Education"
+  title: "Opening & Keynote"
   type: keynote
-  speaker: john-smith
+  description: "Introduction to COMPUTE and regional events, followed by a keynote from a COMPUTE community member on an important topic in CS Education."
 
 - time: "11:00"
-  end_time: "12:30"
-  title: "Discussion Forum: Bridging Research and Practice"
+  end_time: "12:00"
+  title: "Discussion Forum"
   type: discussion
+  description: "We will pick pertinent topics, collect feedback from attendees, and discuss in groups. The idea is to frame problems and suggest solutions and collaborations that can address them—regionally and nationally. No presentations, only discussions and problem-solving. Every attendee should leave with an idea or problem they can use in the workshop sessions."
 
-- time: "12:30"
-  end_time: "13:30"
-  title: "Lunch Break"
-  type: break
-
-- time: "13:30"
-  end_time: "15:00"
+- time: "12:00"
+  end_time: "14:00"
   title: "Educator Workshop"
   type: workshop
-  description: "Interactive session for computing educators"
+  description: "For CS educators who have ideas on creative ways of teaching in their classroom, or have already tried these, and would like to polish it into an experience report. The workshop will help structure the report and answer specific questions. Hands-on, group-based."
+  facilitators:
+    - "Mrityunjay Kumar"
+    - "Prajish Prasad"
+    - "Manu Awasthi"
+    - "Anirban Sen"
+    - "Aalok Thakkar"
+
+- time: "14:00"
+  end_time: "15:00"
+  title: "Lunch"
+  type: break
+  description: "Lunch and networking"
 
 - time: "15:00"
-  end_time: "15:30"
-  title: "Coffee Break"
-  type: break
-
-- time: "15:30"
-  end_time: "17:00"
+  end_time: "17:30"
   title: "Researcher Workshop"
   type: workshop
-  description: "Collaborative session for computing researchers"
+  description: "For CSEd researchers (current or budding) working on a research paper submission, or have ideas to design a study around. They may be starting from a previously rejected paper, a new study they are engaged in, or just have an idea that needs input. The workshop will help prepare for submission to COMPUTE or similar conferences and journals."
+  facilitators:
+    - "Mrityunjay Kumar"
+    - "Prajish Prasad"
+    - "Manu Awasthi"
+    - "Anirban Sen"
+    - "Aalok Thakkar"
 
-- time: "17:00"
-  end_time: "17:30"
-  title: "Closing Ceremony"
+- time: "17:30"
+  end_time: "18:00"
+  title: "Closing"
   type: ceremony
+  description: "Key takeaways from the event, introduction to the upcoming edition of COMPUTE, and wrap-up."

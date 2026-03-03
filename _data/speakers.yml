@@ -1,11 +1,39 @@
-- id: jane-doe
-  name: "Dr. Jane Doe"
-  affiliation: "University of Example"
-  role: "Event Chair"
-  photo: "/assets/images/speakers/jane-doe.jpg"
+# Speakers and Facilitators for ACM COMPUTE Regional Event
 
-- id: john-smith
-  name: "Prof. John Smith"
-  affiliation: "Institute of Technology"
+# Keynote Speaker - To Be Announced
+- id: keynote-tba
+  name: "To Be Announced"
+  affiliation: "COMPUTE Community"
   role: "Keynote Speaker"
-  photo: "/assets/images/speakers/john-smith.jpg"
+  # photo: "/assets/images/speakers/keynote.jpg"
+
+# Workshop Facilitators
+- id: mrityunjay-kumar
+  name: "Mrityunjay Kumar"
+  role: "Workshop Facilitator"
+  # affiliation: ""
+  # photo: "/assets/images/speakers/mrityunjay-kumar.jpg"
+
+- id: prajish-prasad
+  name: "Prajish Prasad"
+  role: "Workshop Facilitator"
+  # affiliation: ""
+  # photo: "/assets/images/speakers/prajish-prasad.jpg"
+
+- id: manu-awasthi
+  name: "Manu Awasthi"
+  role: "Workshop Facilitator"
+  # affiliation: ""
+  # photo: "/assets/images/speakers/manu-awasthi.jpg"
+
+- id: anirban-sen
+  name: "Anirban Sen"
+  role: "Workshop Facilitator"
+  # affiliation: ""
+  # photo: "/assets/images/speakers/anirban-sen.jpg"
+
+- id: aalok-thakkar
+  name: "Aalok Thakkar"
+  role: "Workshop Facilitator"
+  # affiliation: ""
+  # photo: "/assets/images/speakers/aalok-thakkar.jpg"

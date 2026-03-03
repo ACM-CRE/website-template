@@ -1,18 +1,38 @@
-event_name: "ACM COMPUTE Regional 2026"
-tagline: "Connecting Educators & Researchers in Computing"
+event_name: "ACM COMPUTE Regional Event"
+tagline: "For Computing Educators & Researchers"
 date: "2026-03-21"
-date_display: "March 21, 2026"
-time: "9:00 AM - 5:00 PM"
+date_display: "Saturday, March 21, 2026"
+time: "9:30 AM - 6:00 PM"
 
 location:
-  name: "University Conference Center"
-  address: "123 Campus Drive, City, Country"
-  map_embed_url: "https://www.google.com/maps/embed?pb=YOUR_EMBED_URL"
+  name: "Ashoka University"
+  address: "Plot No. 2, Rajiv Gandhi Education City, NCR, P.O. Rai, Sonepat, Haryana 131029, India"
+  url: "https://ashoka.edu.in"
+  map_url: "https://maps.app.goo.gl/hFfPGfygQvX7d7oy9"
+  map_embed_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3494.1877766393895!2d76.99304!3d28.9619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db00c5f5a9f3d%3A0x915be3df2d90a8e6!2sAshoka%20University!5e0!3m2!1sen!2sin!4v1709571234567!5m2!1sen!2sin"
+
+accommodation:
+  available: true
+  name: "IIT Delhi Guest House"
+  location: "IIT-D Sonipat Campus"
+  price: "INR 1,500 per night"
+  note: "On a chargeable basis"
+
+registration:
+  free: true
+  form_url: "https://tally.so/r/LZdjdJ"
 
 social:
-  twitter: "https://twitter.com/"
-  email: "contact@example.org"
+  email: "isigcse.india@acm.org"
+  isigcse_website: "https://isigcse.acm.org/home/"
+  isigcse_twitter: "https://x.com/isigcse"
+  ashoka_website: "https://ashoka.edu.in"
+  ashoka_twitter: "https://x.com/AshokaUniv"
+  ashoka_instagram: "https://www.instagram.com/ashokauniv/"
+
+sponsors:
+  seeking: true
+  form_url: "https://tally.so/r/sponsorship-form-id"
 
 logo: "/assets/images/logo.png"
 hero_image: "/assets/images/hero.jpg"
-registration_form_url: "https://tally.so/r/your-form-id"
