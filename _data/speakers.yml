@@ -11,29 +11,29 @@
 - id: mrityunjay-kumar
   name: "Mrityunjay Kumar"
   role: "Workshop Facilitator"
-  # affiliation: ""
+  affiliation: "BITS Pilani"
   # photo: "/assets/images/speakers/mrityunjay-kumar.jpg"
 
 - id: prajish-prasad
   name: "Prajish Prasad"
   role: "Workshop Facilitator"
-  # affiliation: ""
+  affiliation: "FLAME University"
   # photo: "/assets/images/speakers/prajish-prasad.jpg"
 
 - id: manu-awasthi
   name: "Manu Awasthi"
   role: "Workshop Facilitator"
-  # affiliation: ""
+  affiliation: "IIT Gandhinagar"
   # photo: "/assets/images/speakers/manu-awasthi.jpg"
 
 - id: anirban-sen
   name: "Anirban Sen"
   role: "Workshop Facilitator"
-  # affiliation: ""
+  affiliation: "Ashoka University"
   # photo: "/assets/images/speakers/anirban-sen.jpg"
 
 - id: aalok-thakkar
   name: "Aalok Thakkar"
   role: "Workshop Facilitator"
-  # affiliation: ""
+  affiliation: "Ashoka University"
   # photo: "/assets/images/speakers/aalok-thakkar.jpg"
