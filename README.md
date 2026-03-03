@@ -17,9 +17,9 @@ A Jekyll template for ACM COMPUTE Regional Events. Fork this repository to creat
 
 Click the "Fork" button to create your own copy.
 
-### 2. Enable GitHub Pages
+### 2. Deploy to GitHub Pages
 
-Go to **Settings → Pages → Source** and select "Deploy from a branch" with the `main` branch.
+Run `./scripts/deploy.sh` — see [Deployment](#deployment) for setup details.
 
 ### 3. Configure your event
 
@@ -79,6 +79,23 @@ bundle exec jekyll serve
 
 # Visit http://localhost:4000
 ```
+
+## Deployment
+
+Deploy to GitHub Pages using the provided script:
+
+```bash
+./scripts/deploy.sh
+```
+
+**First-time setup:**
+1. Run the deploy script
+2. Go to **GitHub repo → Settings → Pages**
+3. Under "Source", select **Deploy from a branch**
+4. Select **gh-pages** branch and **/ (root)**
+5. Save
+
+The script builds the site and pushes to the `gh-pages` branch. Run it whenever you want to publish changes.
 
 ## Project Structure
 
