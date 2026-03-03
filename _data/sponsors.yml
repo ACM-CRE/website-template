@@ -1,18 +1,19 @@
+# Sponsors for ACM COMPUTE Regional Event
+# Currently seeking sponsors - tiers defined for when sponsors join
+
+seeking_sponsors: true
+sponsorship_email: "ISIGCSE-OFFICERS@listserv.acm.org"
+
 tiers:
   - name: Platinum
-    sponsors:
-      - name: "TechCorp"
-        logo: "/assets/images/sponsors/techcorp.png"
-        url: "https://example.com/techcorp"
+    sponsors: []
+    # Example sponsor entry:
+    # - name: "Company Name"
+    #   logo: "/assets/images/sponsors/company-logo.png"
+    #   url: "https://company-website.com"
 
   - name: Gold
-    sponsors:
-      - name: "DataCo"
-        logo: "/assets/images/sponsors/dataco.png"
-        url: "https://example.com/dataco"
+    sponsors: []
 
   - name: Community
-    sponsors:
-      - name: "Local ACM Chapter"
-        logo: "/assets/images/sponsors/acm-local.png"
-        url: "https://example.com/acm-local"
+    sponsors: []
