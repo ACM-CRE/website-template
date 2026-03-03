@@ -1,5 +1,8 @@
 ---
 title: Schedule
+lang: en
+alternate:
+  hi: /hi/schedule/
 ---
 
 <div class="container py-5">

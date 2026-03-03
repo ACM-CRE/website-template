@@ -1,5 +1,8 @@
 ---
 title: Speakers
+lang: en
+alternate:
+  hi: /hi/speakers/
 ---
 
 <div class="container py-5">

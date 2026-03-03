@@ -1,5 +1,8 @@
 ---
 title: Register
+lang: en
+alternate:
+  hi: /hi/register/
 ---
 
 <div class="container py-5">

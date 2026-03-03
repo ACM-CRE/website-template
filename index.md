@@ -1,6 +1,9 @@
 ---
 layout: home
 title: Home
+lang: en
+alternate:
+  hi: /hi/
 ---
 
 <section class="py-5">

@@ -1,14 +1,14 @@
 ---
-title: Venue
-lang: en
+title: स्थान
+lang: hi
+permalink: /hi/venue/
 alternate:
-  hi: /hi/venue/
+  en: /venue/
 ---
 
 <div class="container py-5">
 
-{% assign lang = page.lang | default: site.lang | default: "en" %}
-{% assign strings = site.data.strings[lang] %}
+{% assign strings = site.data.strings.hi %}
 
 <h1>{{ strings.venue.heading }}</h1>
 
@@ -18,7 +18,7 @@ alternate:
     <p>{{ site.data.site.location.address }}</p>
 
     <h3 class="h5 mt-4">{{ strings.venue.directions }}</h3>
-    <p>Details about getting to the venue, parking, public transit, etc.</p>
+    <p>स्थल तक पहुंचने, पार्किंग, सार्वजनिक परिवहन आदि के बारे में विवरण।</p>
   </div>
 
   <div class="col-lg-6">
@@ -26,7 +26,7 @@ alternate:
       <div class="venue-map">
         <iframe
           src="{{ site.data.site.location.map_embed_url }}"
-          title="Venue location map"
+          title="स्थान का नक्शा"
           loading="lazy"
           allowfullscreen>
         </iframe>

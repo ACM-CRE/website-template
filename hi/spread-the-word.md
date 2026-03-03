@@ -1,25 +1,25 @@
 ---
-title: Spread the Word
-lang: en
+title: प्रचार करें
+lang: hi
+permalink: /hi/spread-the-word/
 alternate:
-  hi: /hi/spread-the-word/
+  en: /spread-the-word/
 ---
 
 <div class="container py-5">
 
-{% assign lang = page.lang | default: site.lang | default: "en" %}
-{% assign strings = site.data.strings[lang] %}
+{% assign strings = site.data.strings.hi %}
 
 <h1>{{ strings.spread_the_word.heading }}</h1>
 
-<p class="lead mb-4">Help us spread the word about {{ site.data.site.event_name }}!</p>
+<p class="lead mb-4">{{ site.data.site.event_name }} के बारे में प्रचार करने में हमारी मदद करें!</p>
 
 <!-- Flyers Section -->
 <div class="share-section">
   <h3>{{ strings.spread_the_word.flyer_section }}</h3>
-  <p>Download our event flyer to share with your network:</p>
+  <p>अपने नेटवर्क के साथ साझा करने के लिए हमारा इवेंट फ्लायर डाउनलोड करें:</p>
   <a href="{{ '/assets/downloads/flyer.pdf' | relative_url }}" class="btn btn-outline-primary" download>
-    Download Flyer (PDF)
+    फ्लायर डाउनलोड करें (PDF)
   </a>
 </div>
 
@@ -29,7 +29,7 @@ alternate:
 
   <h4 class="h6">{{ strings.spread_the_word.email_subject }}</h4>
   <div class="position-relative">
-    <pre id="email-subject">Join us at {{ site.data.site.event_name }} on {{ site.data.site.date_display }}</pre>
+    <pre id="email-subject">{{ site.data.site.date_display }} को {{ site.data.site.event_name }} में शामिल हों</pre>
     <button class="btn btn-sm btn-outline-secondary copy-btn position-absolute top-0 end-0 m-2"
             data-copy-target="email-subject"
             data-copied-text="{{ strings.spread_the_word.copied }}">
@@ -39,19 +39,19 @@ alternate:
 
   <h4 class="h6 mt-3">{{ strings.spread_the_word.email_body }}</h4>
   <div class="position-relative">
-    <pre id="email-body">Dear colleagues,
+    <pre id="email-body">प्रिय साथियों,
 
-I wanted to share an exciting event with you: {{ site.data.site.event_name }}.
+मैं आपके साथ एक रोमांचक कार्यक्रम साझा करना चाहता/चाहती हूं: {{ site.data.site.event_name }}
 
-Date: {{ site.data.site.date_display }}
-Time: {{ site.data.site.time }}
-Location: {{ site.data.site.location.name }}
+तारीख: {{ site.data.site.date_display }}
+समय: {{ site.data.site.time }}
+स्थान: {{ site.data.site.location.name }}
 
 {{ site.data.site.tagline }}
 
-Register now at: {{ site.url }}{{ site.baseurl }}/register/
+अभी पंजीकरण करें: {{ site.url }}{{ site.baseurl }}/hi/register/
 
-I hope to see you there!</pre>
+आशा है वहां मिलेंगे!</pre>
     <button class="btn btn-sm btn-outline-secondary copy-btn position-absolute top-0 end-0 m-2"
             data-copy-target="email-body"
             data-copied-text="{{ strings.spread_the_word.copied }}">
@@ -66,14 +66,14 @@ I hope to see you there!</pre>
 
   <h4 class="h6">{{ strings.spread_the_word.twitter_post }}</h4>
   <div class="position-relative">
-    <pre id="twitter-post">Excited for {{ site.data.site.event_name }}!
+    <pre id="twitter-post">{{ site.data.site.event_name }} के लिए उत्साहित!
 
 {{ site.data.site.date_display }}
 {{ site.data.site.location.name }}
 
-Join educators & researchers for keynotes, workshops, and networking.
+शिक्षकों और शोधकर्ताओं के लिए मुख्य भाषण, कार्यशालाएं और नेटवर्किंग।
 
-Register: {{ site.url }}{{ site.baseurl }}/register/
+पंजीकरण: {{ site.url }}{{ site.baseurl }}/hi/register/
 
 #ACMCompute #ComputingEducation</pre>
     <button class="btn btn-sm btn-outline-secondary copy-btn position-absolute top-0 end-0 m-2"
@@ -85,19 +85,19 @@ Register: {{ site.url }}{{ site.baseurl }}/register/
 
   <h4 class="h6 mt-3">{{ strings.spread_the_word.linkedin_post }}</h4>
   <div class="position-relative">
-    <pre id="linkedin-post">I'm excited to share {{ site.data.site.event_name }}, a regional event connecting computing educators and researchers.
+    <pre id="linkedin-post">मैं {{ site.data.site.event_name }} साझा करने के लिए उत्साहित हूं, कंप्यूटिंग शिक्षकों और शोधकर्ताओं को जोड़ने वाला एक क्षेत्रीय कार्यक्रम।
 
 {{ site.data.site.date_display }}
 {{ site.data.site.location.name }}
 
-The event features:
-- Keynote presentations from leading experts
-- Interactive educator and researcher workshops
-- Networking opportunities
+कार्यक्रम में शामिल हैं:
+- प्रमुख विशेषज्ञों के मुख्य भाषण
+- इंटरैक्टिव शिक्षक और शोधकर्ता कार्यशालाएं
+- नेटवर्किंग के अवसर
 
-If you're involved in computing education or research, I encourage you to attend!
+यदि आप कंप्यूटिंग शिक्षा या अनुसंधान में शामिल हैं, तो मैं आपको उपस्थित होने के लिए प्रोत्साहित करता/करती हूं!
 
-Learn more and register: {{ site.url }}{{ site.baseurl }}/register/
+अधिक जानें और पंजीकरण करें: {{ site.url }}{{ site.baseurl }}/hi/register/
 
 #ComputingEducation #ACM #Research #Networking</pre>
     <button class="btn btn-sm btn-outline-secondary copy-btn position-absolute top-0 end-0 m-2"

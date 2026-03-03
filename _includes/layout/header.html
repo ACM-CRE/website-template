@@ -1,10 +1,14 @@
 {% assign lang = page.lang | default: site.lang | default: "en" %}
 {% assign strings = site.data.strings[lang] %}
+{% assign lang_prefix = "" %}
+{% if lang != "en" %}
+  {% assign lang_prefix = "/" | append: lang %}
+{% endif %}
 
 <header class="site-header">
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="{{ '/' | relative_url }}">
+      <a class="navbar-brand" href="{{ lang_prefix | append: '/' | relative_url }}">
         {% if site.data.site.logo %}
           <img src="{{ site.data.site.logo | relative_url }}" alt="{{ site.data.site.event_name }}" height="40">
         {% else %}
@@ -20,8 +24,9 @@
         <ul class="navbar-nav ms-auto">
           {% for item in site.data.navigation %}
             {% assign nav_title = strings.nav[item.key] %}
+            {% assign nav_url = lang_prefix | append: item.url %}
             <li class="nav-item">
-              <a class="nav-link{% if page.url == item.url %} active" aria-current="page{% endif %}" href="{{ item.url | relative_url }}">
+              <a class="nav-link{% if page.url == nav_url %} active" aria-current="page{% endif %}" href="{{ nav_url | relative_url }}">
                 {{ nav_title }}
               </a>
             </li>

@@ -1,5 +1,8 @@
 ---
 title: Sponsors
+lang: en
+alternate:
+  hi: /hi/sponsors/
 ---
 
 <div class="container py-5">
