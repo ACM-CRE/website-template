@@ -1,19 +1,17 @@
 # Sponsors for ACM COMPUTE Regional Event
-# Currently seeking sponsors - tiers defined for when sponsors join
 
 seeking_sponsors: true
 sponsorship_email: "ISIGCSE-OFFICERS@listserv.acm.org"
 
 tiers:
-  - name: Platinum
-    sponsors: []
-    # Example sponsor entry:
-    # - name: "Company Name"
-    #   logo: "/assets/images/sponsors/company-logo.png"
-    #   url: "https://company-website.com"
+  - name: Sponsors
+    sponsors:
+      - name: "Mphasis"
+        logo: "/assets/images/sponsors/mphasis_f1_logo.png"
+        url: "https://www.mphasis.com"
 
-  - name: Gold
-    sponsors: []
-
-  - name: Community
-    sponsors: []
+  - name: Academic Partners
+    sponsors:
+      - name: "Ashoka University"
+        logo: "/assets/images/organisers/logo-ashoka.svg"
+        url: "https://ashoka.edu.in"

@@ -10,20 +10,31 @@ alternate:
 {% assign lang = page.lang | default: site.lang | default: "en" %}
 {% assign strings = site.data.strings[lang] %}
 
-<div class="row">
-  <div class="col-lg-8 mx-auto text-center">
-    <h1 class="mb-4">Partner With Us</h1>
-    <p class="lead mb-5">
-      Help shape the future of CS education in India. Your support enables educators and researchers to connect, learn, and build a stronger computing education community.
-    </p>
+{% assign has_sponsors = false %}
+{% for tier in site.data.sponsors.tiers %}
+  {% if tier.sponsors.size > 0 %}
+    {% assign has_sponsors = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if has_sponsors %}
+<div class="row mb-5">
+  <div class="col-12">
+    <h1 class="text-center mb-5">{{ strings.sponsors.heading }}</h1>
+    {% include components/sponsor-grid.html %}
   </div>
 </div>
+{% endif %}
 
-<div class="row mb-5">
+<div class="row">
   <div class="col-lg-10 mx-auto">
-    <div class="card border-0 shadow-sm">
+    <div class="card">
       <div class="card-body p-4 p-md-5">
-        <h2 class="h4 mb-4">Why Sponsor?</h2>
+        <h2 class="h4 mb-4">Partner With Us</h2>
+        <p class="mb-4">
+          Help shape the future of CS education in India. Your support enables educators and researchers to connect, learn, and build a stronger computing education community.
+        </p>
 
         <div class="row g-4 mb-4">
           <div class="col-md-6">
@@ -61,22 +72,5 @@ alternate:
     </div>
   </div>
 </div>
-
-{% assign has_sponsors = false %}
-{% for tier in site.data.sponsors.tiers %}
-  {% if tier.sponsors.size > 0 %}
-    {% assign has_sponsors = true %}
-    {% break %}
-  {% endif %}
-{% endfor %}
-
-{% if has_sponsors %}
-<div class="row">
-  <div class="col-12">
-    <h2 class="text-center mb-5">Our Sponsors</h2>
-    {% include components/sponsor-grid.html %}
-  </div>
-</div>
-{% endif %}
 
 </div>
