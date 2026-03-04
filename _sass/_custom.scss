@@ -1,13 +1,36 @@
-// Custom styles for ACM COMPUTE Regional template
+// ACM CRE Custom Styles
+// Design: dev-docs/plans/2026-03-04-visual-identity-design.md
+
+// =============================================================================
+// Base
+// =============================================================================
+
+body {
+  font-weight: $font-weight-normal;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $font-weight-semibold;
+  line-height: 1.3;
+}
+
+.prose {
+  max-width: $text-max-width;
+}
+
+.container {
+  max-width: $container-max-width;
+}
 
 // Skip link for accessibility
 .skip-link {
   position: absolute;
   top: -40px;
   left: 0;
-  background: $primary;
+  background: $color-accent;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: $space-xs $space-sm;
   z-index: 9999;
   transition: top 0.3s;
 
@@ -16,27 +39,186 @@
   }
 }
 
-// Hero section
-.hero {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 6rem 0;
-  position: relative;
+// =============================================================================
+// Buttons
+// =============================================================================
+
+.btn {
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.btn-primary {
+  background-color: $color-accent;
+  border-color: $color-accent;
   color: #fff;
 
-  &::before {
-    content: "";
+  &:hover,
+  &:focus {
+    background-color: $color-accent-hover;
+    border-color: $color-accent-hover;
+    color: #fff;
+  }
+}
+
+.btn-outline-primary {
+  color: $color-accent;
+  border-color: $color-accent;
+  background: transparent;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+    border-color: $color-accent;
+    color: #fff;
+  }
+}
+
+.btn-light {
+  background-color: $color-bg;
+  border-color: $color-bg;
+  color: $color-text;
+
+  &:hover,
+  &:focus {
+    background-color: $color-bg-subtle;
+    border-color: $color-bg-subtle;
+  }
+}
+
+// =============================================================================
+// Navigation
+// =============================================================================
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: $color-bg;
+  border-bottom: 1px solid $color-border;
+}
+
+.navbar {
+  padding: $space-sm 0;
+}
+
+.navbar-brand-group {
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+
+  .navbar-logos {
+    margin-right: -0.9rem;
+  }
+}
+
+.navbar-logos {
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+
+  a {
+    display: block;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  img {
+    height: 36px;
+    width: auto;
+  }
+}
+
+.navbar-divider {
+  width: 1px;
+  height: 20px;
+  background-color: $color-border;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: $color-text;
+  margin: 0;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    color: $color-text;
+  }
+}
+
+.nav-link {
+  color: $color-text-muted;
+  font-size: 0.875rem;
+  padding: $space-xs $space-sm;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: $color-text;
+  }
+
+  &.active {
+    color: $color-accent;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: $space-sm;
+      right: $space-sm;
+      height: 2px;
+      background: $color-accent;
+    }
+  }
+}
+
+.navbar-cta {
+  margin-left: $space-sm;
+}
+
+// =============================================================================
+// Hero
+// =============================================================================
+
+.hero {
+  background: $color-bg;
+  padding: ($space-xl + 1rem) 0 ($space-xl + 2rem);
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-      135deg,
-      rgba($primary, 0.9) 0%,
-      rgba($dark, 0.8) 100%
-    );
+    font-family: $font-family-sans-serif;
+    font-size: 20rem;
+    font-weight: 300;
+    color: rgba($color-accent, 0.06);
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  &::before {
+    content: "[";
+    left: 3%;
+    top: 35%;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    content: "]";
+    right: 3%;
+    top: 60%;
+    transform: translateY(-50%);
   }
 
   .container {
@@ -44,73 +226,184 @@
     z-index: 1;
   }
 
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+  .hero-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $space-md;
+    margin-bottom: $space-md;
 
-    @media (min-width: 768px) {
-      font-size: 3.5rem;
+    a {
+      display: block;
+      opacity: 0.8;
+      transition: opacity 0.2s;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+
+    img {
+      height: 40px;
+      width: auto;
     }
   }
 
-  .lead {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    opacity: 0.9;
-  }
-
-  .event-date {
-    font-size: 1.5rem;
+  .hero-title {
+    font-size: 3rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    color: $color-text;
+    margin-bottom: $space-sm;
+    line-height: 1.15;
   }
 
-  .event-location {
-    font-size: 1.125rem;
-    opacity: 0.9;
+  .hero-date {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: $color-text;
+    margin-bottom: $space-xs;
+  }
+
+  .hero-location {
+    font-size: 1rem;
+    color: $color-text-muted;
+    margin-bottom: $space-md;
+  }
+
+  @media (max-width: 767px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+
+    &::before,
+    &::after {
+      font-size: 12rem;
+    }
   }
 }
 
-// Schedule table
+// =============================================================================
+// Sections
+// =============================================================================
+
+section {
+  padding: $space-lg 0;
+}
+
+.bg-subtle {
+  background-color: $color-bg-subtle;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: $space-md;
+
+  h2 {
+    font-size: 1.5rem;
+    display: inline-block;
+  }
+}
+
+.section-header-bracketed h2::before {
+  content: "[ ";
+  font-weight: 300;
+  color: $color-text-subtle;
+}
+
+.section-header-bracketed h2::after {
+  content: " ]";
+  font-weight: 300;
+  color: $color-text-subtle;
+}
+
+// =============================================================================
+// Cards
+// =============================================================================
+
+.card {
+  border: 1px solid $color-border;
+  border-radius: 0;
+  box-shadow: none;
+  background: $color-bg;
+}
+
+.card-body {
+  padding: $space-sm + $space-xs;
+}
+
+.card-bracketed {
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    font-family: $font-family-sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgba($color-accent, 0.08);
+    line-height: 1;
+    pointer-events: none;
+  }
+
+  &::before {
+    content: "[";
+    top: $space-xs;
+    left: $space-xs;
+  }
+
+  &::after {
+    content: "]";
+    bottom: $space-xs;
+    right: $space-xs;
+  }
+}
+
+// =============================================================================
+// Schedule
+// =============================================================================
+
 .schedule-table {
   th {
-    background-color: $light;
+    background-color: $color-bg-subtle;
     font-weight: 600;
+    font-size: 0.875rem;
+  }
+
+  td {
+    vertical-align: middle;
   }
 
   .session-type {
     display: inline-block;
     padding: 0.25rem 0.5rem;
-    border-radius: $border-radius-sm;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.025em;
+    border-radius: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
 
     &--keynote {
-      background-color: rgba($primary, 0.1);
-      color: $primary;
+      background-color: rgba($color-keynote, 0.1);
+      color: $color-keynote;
     }
 
     &--workshop {
-      background-color: rgba($success, 0.1);
-      color: $success;
+      background-color: rgba($color-workshop, 0.1);
+      color: $color-workshop;
     }
 
     &--break {
-      background-color: rgba($secondary, 0.1);
-      color: $secondary;
+      background-color: rgba($color-break, 0.1);
+      color: $color-break;
     }
 
     &--ceremony {
-      background-color: rgba($warning, 0.15);
-      color: darken($warning, 25%);
+      background-color: rgba($color-ceremony, 0.1);
+      color: $color-ceremony;
     }
 
     &--discussion {
-      background-color: rgba($info, 0.15);
-      color: darken($info, 25%);
+      background-color: rgba($color-discussion, 0.1);
+      color: $color-discussion;
     }
   }
 
@@ -118,72 +411,82 @@
     white-space: nowrap;
     font-weight: 500;
     font-variant-numeric: tabular-nums;
+    color: $color-text-muted;
   }
 }
 
-// Speaker list
+// =============================================================================
+// Speakers
+// =============================================================================
+
 .speaker-card {
   text-align: center;
-  padding: 1.5rem;
+  padding: $space-sm + $space-xs;
 
   .speaker-photo {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 1rem;
-    border: 3px solid $light;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: $space-sm;
+    border: 2px solid $color-border;
   }
 
   .speaker-placeholder {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    margin: 0 auto 1rem;
+    margin: 0 auto $space-sm;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: $color-bg-subtle;
+    border: 2px solid $color-border;
   }
 
   .speaker-name {
     font-weight: 600;
+    font-size: 1rem;
     margin-bottom: 0.25rem;
   }
 
   .speaker-affiliation {
-    color: $secondary;
+    color: $color-text-muted;
     font-size: 0.875rem;
     margin-bottom: 0.25rem;
   }
 
   .speaker-role {
-    color: $primary;
+    color: $color-accent;
     font-size: 0.875rem;
     font-weight: 500;
   }
 }
 
-// Sponsor grid
+// =============================================================================
+// Sponsors
+// =============================================================================
+
 .sponsor-tier {
-  margin-bottom: 3rem;
+  margin-bottom: $space-lg;
 
   h3 {
     text-align: center;
-    margin-bottom: 1.5rem;
-    color: $secondary;
-    font-size: 1rem;
+    margin-bottom: $space-sm;
+    color: $color-text-muted;
+    font-size: 0.875rem;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
   }
 }
 
 .sponsor-logo {
-  max-height: 60px;
+  max-height: 50px;
   width: auto;
   filter: grayscale(100%);
-  opacity: 0.7;
-  transition: all 0.3s ease;
+  opacity: 0.6;
+  transition: all 0.2s;
 
   &:hover,
   &:focus {
@@ -193,13 +496,152 @@
 }
 
 .sponsor-placeholder {
-  padding: 1rem 1.5rem;
-  background-color: $light;
-  border-radius: $border-radius;
+  padding: $space-sm $space-sm + $space-xs;
+  background-color: $color-bg-subtle;
+  border: 1px solid $color-border;
   display: inline-block;
+  font-size: 0.875rem;
+  color: $color-text-muted;
 }
 
-// Embed form
+// =============================================================================
+// Footer
+// =============================================================================
+
+.site-footer {
+  background-color: $color-bg-subtle;
+  padding: $space-lg 0 $space-md;
+  margin-top: $space-xl;
+}
+
+.footer-organisers {
+  text-align: center;
+  margin-bottom: $space-md;
+}
+
+.footer-organisers-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: $space-md;
+
+  a {
+    display: block;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  img {
+    height: 32px;
+    width: auto;
+  }
+}
+
+.footer-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: $space-sm;
+  padding: $space-md 0;
+  border-top: 1px solid $color-border;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: $space-xs;
+  color: $color-text-muted;
+  font-size: 0.875rem;
+}
+
+.footer-logo {
+  font-weight: 600;
+  color: $color-text;
+}
+
+.footer-contact {
+  font-size: 0.875rem;
+  color: $color-text-muted;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: $space-xs;
+}
+
+.footer-copyright {
+  font-size: 0.75rem;
+  color: $color-text-subtle;
+  margin: 0;
+}
+
+.footer-attribution {
+  display: flex;
+  align-items: center;
+  gap: $space-sm;
+  font-size: 0.725rem;
+  color: $color-text-subtle;
+
+  a {
+    color: $color-text-subtle;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover,
+    &:focus {
+      color: $color-text-muted;
+    }
+  }
+
+  .footer-github-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-github-icon {
+    width: 12px;
+    height: 12px;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-main,
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-attribution {
+    justify-content: center;
+  }
+}
+
+// =============================================================================
+// Forms & Embeds
+// =============================================================================
+
 .embed-form {
   position: relative;
   width: 100%;
@@ -208,12 +650,10 @@
   iframe {
     width: 100%;
     min-height: 500px;
-    border: none;
-    border-radius: $border-radius;
+    border: 1px solid $color-border;
   }
 }
 
-// Copy button
 .copy-btn {
   position: relative;
 
@@ -223,95 +663,38 @@
     top: -2rem;
     left: 50%;
     transform: translateX(-50%);
-    background: $dark;
+    background: $color-text;
     color: #fff;
     padding: 0.25rem 0.5rem;
-    border-radius: $border-radius-sm;
     font-size: 0.75rem;
     white-space: nowrap;
   }
 }
 
-// Language switcher
+// =============================================================================
+// Misc Components
+// =============================================================================
+
 .language-switcher {
   .dropdown-toggle {
     font-size: 0.875rem;
-  }
-}
-
-// Footer
-.site-footer {
-  background-color: $dark;
-  color: rgba(#fff, 0.7);
-  padding: 3rem 0 1.5rem;
-
-  h5 {
-    color: #fff;
-    font-size: 0.875rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 1rem;
-  }
-
-  a {
-    color: rgba(#fff, 0.7);
-    text-decoration: none;
+    color: $color-text-muted;
+    background-color: transparent;
+    border-color: $color-border;
 
     &:hover,
-    &:focus {
-      color: #fff;
-    }
-  }
-
-  .footer-links {
-    li {
-      margin-bottom: 0.5rem;
-    }
-
-    a {
-      font-size: 0.875rem;
-    }
-  }
-
-  .social-links {
-    a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 36px;
-      height: 36px;
-      background: rgba(#fff, 0.1);
-      border-radius: 50%;
-      transition: background 0.2s;
-
-      &:hover,
-      &:focus {
-        background: rgba(#fff, 0.2);
-      }
-    }
-  }
-
-  .footer-attribution {
-    color: rgba(#fff, 0.5);
-
-    a {
-      color: rgba(#fff, 0.5);
-      text-decoration: underline;
-      text-decoration-style: dotted;
-      text-underline-offset: 2px;
-
-      &:hover,
-      &:focus {
-        color: rgba(#fff, 0.7);
-      }
+    &:focus,
+    &:active,
+    &.show {
+      color: $color-text;
+      background-color: $color-bg-subtle;
+      border-color: $color-border;
     }
   }
 }
 
-// Venue map
 .venue-map {
-  border-radius: $border-radius;
+  border: 1px solid $color-border;
   overflow: hidden;
 
   iframe {
@@ -321,36 +704,35 @@
   }
 }
 
-// Spread the word sections
 .share-section {
-  background-color: $light;
-  border-radius: $border-radius;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
+  background-color: $color-bg-subtle;
+  padding: $space-sm + $space-xs;
+  margin-bottom: $space-sm;
 
   h3 {
-    font-size: 1.125rem;
-    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-bottom: $space-sm;
   }
 
   pre {
-    background-color: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: $border-radius-sm;
-    padding: 1rem;
+    background-color: $color-bg;
+    border: 1px solid $color-border;
+    padding: $space-sm;
     white-space: pre-wrap;
     word-wrap: break-word;
     font-size: 0.875rem;
   }
 }
 
-// Accessibility: visible focus rings
+// =============================================================================
+// Accessibility
+// =============================================================================
+
 *:focus-visible {
   outline: $focus-ring-width solid $focus-ring-color;
   outline-offset: 2px;
 }
 
-// Reduced motion preference
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

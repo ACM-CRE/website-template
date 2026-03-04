@@ -28,10 +28,12 @@ social:
   ashoka_website: "https://ashoka.edu.in"
   ashoka_twitter: "https://x.com/AshokaUniv"
   ashoka_instagram: "https://www.instagram.com/ashokauniv/"
+  icons:
+    github: "/assets/images/social/github.svg"
 
 sponsors:
   seeking: true
   form_url: "https://tally.so/r/sponsorship-form-id"
 
-logo: "/assets/images/logo.png"
-hero_image: "/assets/images/hero.jpg"
+# logo: "/assets/images/logo.png"  # Using text brand "ACM CRE"
+# hero_image: "/assets/images/hero.jpg"  # Using typography-focused hero
