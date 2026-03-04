@@ -17,10 +17,20 @@ alternate:
 <!-- Flyers Section -->
 <div class="share-section">
   <h3>{{ strings.spread_the_word.flyer_section }}</h3>
-  <p>अपने नेटवर्क के साथ साझा करने के लिए हमारा इवेंट फ्लायर डाउनलोड करें:</p>
-  <a href="{{ '/assets/downloads/flyer.pdf' | relative_url }}" class="btn btn-outline-primary" download>
-    फ्लायर डाउनलोड करें (PDF)
-  </a>
+  <p>अपने नेटवर्क के साथ साझा करने के लिए हमारे इवेंट फ्लायर डाउनलोड करें:</p>
+  <div class="d-flex flex-wrap gap-3 mb-3">
+    <a href="{{ '/assets/downloads/flyer-en.pdf' | relative_url }}" class="btn btn-primary" download>
+      {{ strings.spread_the_word.download_en }} (PDF)
+    </a>
+    <a href="{{ '/assets/downloads/flyer-hi.pdf' | relative_url }}" class="btn btn-outline-primary" download>
+      {{ strings.spread_the_word.download_hi }} (PDF)
+    </a>
+  </div>
+  <p class="small text-muted">
+    {{ strings.spread_the_word.view_browser }}:
+    <a href="{{ '/flyer/' | relative_url }}">English</a> |
+    <a href="{{ '/hi/flyer/' | relative_url }}">हिंदी</a>
+  </p>
 </div>
 
 <!-- Email Template Section -->
