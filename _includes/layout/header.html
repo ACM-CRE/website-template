@@ -6,14 +6,10 @@
 {% endif %}
 
 <header class="site-header">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <nav class="navbar navbar-expand-lg">
     <div class="container">
       <a class="navbar-brand" href="{{ lang_prefix | append: '/' | relative_url }}">
-        {% if site.data.site.logo %}
-          <img src="{{ site.data.site.logo | relative_url }}" alt="{{ site.data.site.event_name }}" height="40">
-        {% else %}
-          {{ site.data.site.event_name }}
-        {% endif %}
+        ACM CRE
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +22,7 @@
             {% assign nav_title = strings.nav[item.key] %}
             {% assign nav_url = lang_prefix | append: item.url %}
             <li class="nav-item">
-              <a class="nav-link{% if page.url == nav_url %} active" aria-current="page{% endif %}" href="{{ nav_url | relative_url }}">
+              <a class="nav-link{% if page.url == nav_url %} active{% endif %}" {% if page.url == nav_url %}aria-current="page"{% endif %} href="{{ nav_url | relative_url }}">
                 {{ nav_title }}
               </a>
             </li>
