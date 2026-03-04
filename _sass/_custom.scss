@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero {
   background: $color-bg;
-  padding: $space-xl 0;
+  padding: ($space-xl + 1rem) 0 ($space-xl + 2rem);
   position: relative;
   overflow: hidden;
 
