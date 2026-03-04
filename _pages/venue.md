@@ -67,7 +67,7 @@ alternate:
           <li>Exit the station and head to New Delhi Metro Station. Take the Yellow Line (towards Samaypur Badli) directly to Azadpur.</li>
         </ul>
 
-        <p class="small text-muted mt-3 mb-0">University security staff in navy blue uniforms are available near the metro entrance and shuttle boarding point for assistance.</p>
+        <p class="small text-muted mt-3 mb-0">University security staff in navy blue uniforms would be near the metro entrance and shuttle boarding point for assistance.</p>
       </div>
     </div>
   </div>
@@ -87,16 +87,5 @@ alternate:
   </div>
 </div>
 {% endif %}
-
-<div class="row">
-  <div class="col-lg-8">
-    <div class="card border-primary">
-      <div class="card-body">
-        <h2 class="h5 mb-3">Certificate of Participation</h2>
-        <p class="mb-0">All participants will receive a certificate for attending the workshop as part of this event.</p>
-      </div>
-    </div>
-  </div>
-</div>
 
 </div>

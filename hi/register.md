@@ -15,7 +15,7 @@ alternate:
     <h1>{{ strings.register.heading }}</h1>
 
     <div class="alert alert-success mb-4">
-      <strong>निःशुल्क पंजीकरण</strong> — इस कार्यक्रम के लिए कोई पंजीकरण शुल्क नहीं है।
+      <strong>निःशुल्क पंजीकरण</strong> — इस कार्यक्रम के लिए कोई पंजीकरण शुल्क नहीं है। सभी प्रतिभागियों को भागीदारी प्रमाणपत्र मिलेगा।
     </div>
 
     {% include components/embed-form.html url=site.data.site.registration.form_url %}

@@ -88,15 +88,4 @@ alternate:
 </div>
 {% endif %}
 
-<div class="row">
-  <div class="col-lg-8">
-    <div class="card border-primary">
-      <div class="card-body">
-        <h2 class="h5 mb-3">भागीदारी प्रमाणपत्र</h2>
-        <p class="mb-0">सभी प्रतिभागियों को इस कार्यक्रम के हिस्से के रूप में कार्यशाला में भाग लेने का प्रमाणपत्र मिलेगा।</p>
-      </div>
-    </div>
-  </div>
-</div>
-
 </div>

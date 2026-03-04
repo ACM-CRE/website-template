@@ -15,7 +15,7 @@ alternate:
     <h1>{{ strings.register.heading }}</h1>
 
     <div class="alert alert-success mb-4">
-      <strong>Free Registration</strong> — No registration fees for this event.
+      <strong>Free Registration</strong> — No registration fees for this event. All participants will receive a certificate of participation.
     </div>
 
     {% include components/embed-form.html url=site.data.site.registration.form_url %}
