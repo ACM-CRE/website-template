@@ -7,12 +7,12 @@ alternate:
   en: /
 ---
 
-<section class="py-5">
+<section>
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <h2 class="text-center mb-4">क्यों भाग लें?</h2>
-        <p class="lead text-center mb-5">
+        <p class="lead text-center mb-5 prose mx-auto">
           COMPUTE क्षेत्रीय कार्यक्रम CS शिक्षकों और शोधकर्ताओं को समुदाय को मजबूत करने, अनुभव साझा करने और कंप्यूटिंग शिक्षा में क्षेत्रीय चुनौतियों से निपटने के लिए एक साथ लाता है।
         </p>
 
@@ -31,12 +31,12 @@ alternate:
   </div>
 </section>
 
-<section class="py-5 bg-light">
+<section class="bg-subtle">
   <div class="container">
     <h2 class="text-center mb-4">क्या उम्मीद करें</h2>
     <div class="row g-4">
       <div class="col-md-4">
-        <div class="card h-100 border-0 shadow-sm">
+        <div class="card h-100">
           <div class="card-body">
             <h3 class="h5">मुख्य भाषण और चर्चा</h3>
             <p class="mb-0">COMPUTE समुदाय के विशेषज्ञों से सुनें, फिर प्रासंगिक विषयों पर समूह चर्चा में शामिल हों—समस्याओं को परिभाषित करना, समाधान सुझाना, सहयोग बनाना।</p>
@@ -44,7 +44,7 @@ alternate:
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card h-100 border-0 shadow-sm">
+        <div class="card h-100">
           <div class="card-body">
             <h3 class="h5">व्यावहारिक कार्यशालाएं</h3>
             <p class="mb-0">दो समर्पित सत्र—एक शिक्षकों के लिए, एक शोधकर्ताओं के लिए। अनुभवी फैसिलिटेटर्स के मार्गदर्शन में अपने विचारों पर समूह-आधारित, व्यावहारिक काम।</p>
@@ -52,7 +52,7 @@ alternate:
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card h-100 border-0 shadow-sm">
+        <div class="card h-100">
           <div class="card-body">
             <h3 class="h5">समुदाय निर्माण</h3>
             <p class="mb-0">क्षेत्र भर के संस्थानों के संकाय और शोधकर्ताओं से जुड़ें। सभी सत्र समूह-आधारित हैं ताकि ये संबंध कार्यक्रम के बाद भी बने रहें।</p>
@@ -63,7 +63,7 @@ alternate:
   </div>
 </section>
 
-<section class="py-5">
+<section>
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 mb-4 mb-lg-0">
@@ -77,7 +77,7 @@ alternate:
         <a href="{{ '/hi/register/' | relative_url }}" class="btn btn-primary btn-lg">अभी पंजीकरण करें</a>
       </div>
       <div class="col-lg-6">
-        <div class="card border-0 bg-light">
+        <div class="card bg-subtle">
           <div class="card-body">
             <h3 class="h5">एक व्यस्त, केंद्रित दिन</h3>
             <p>यह 8 घंटे का व्यस्त कार्यक्रम है। कोई औपचारिक चाय विराम नहीं—सत्रों के दौरान चाय और नाश्ता उपलब्ध रहेगा, लें और वापस आ जाएं। नेटवर्किंग शुरुआत से पहले, दोपहर के भोजन के दौरान और समापन के बाद होती है।</p>
