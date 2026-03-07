@@ -1,15 +1,16 @@
 {% assign lang = page.lang | default: site.lang | default: "en" %}
 {% assign strings = site.data.strings[lang] %}
+{% assign speakers = site.data.speakers[lang] %}
 
-{% if site.data.speakers.keynote.size > 0 %}
+{% if speakers.keynote.size > 0 %}
 {% assign section_has_photos = false %}
-{% for person in site.data.speakers.keynote %}
+{% for person in speakers.keynote %}
   {% if person.photo %}{% assign section_has_photos = true %}{% endif %}
 {% endfor %}
 <section class="mb-5">
   <h2 class="h4 mb-4">{{ strings.people.keynote }}</h2>
   <div class="row g-4">
-    {% for speaker in site.data.speakers.keynote %}
+    {% for speaker in speakers.keynote %}
       <div class="col-6 col-md-4 col-lg-3">
         <div class="speaker-card{% unless section_has_photos %} speaker-card--compact{% endunless %}">
           {% if section_has_photos %}
@@ -30,15 +31,15 @@
 </section>
 {% endif %}
 
-{% if site.data.speakers.facilitators.size > 0 %}
+{% if speakers.facilitators.size > 0 %}
 {% assign section_has_photos = false %}
-{% for person in site.data.speakers.facilitators %}
+{% for person in speakers.facilitators %}
   {% if person.photo %}{% assign section_has_photos = true %}{% endif %}
 {% endfor %}
 <section class="mb-5">
   <h2 class="h4 mb-4">{{ strings.people.facilitators }}</h2>
   <div class="row g-4">
-    {% for speaker in site.data.speakers.facilitators %}
+    {% for speaker in speakers.facilitators %}
       <div class="col-6 col-md-4 col-lg-3">
         <div class="speaker-card{% unless section_has_photos %} speaker-card--compact{% endunless %}">
           {% if section_has_photos %}
@@ -59,15 +60,15 @@
 </section>
 {% endif %}
 
-{% if site.data.speakers.organisers.size > 0 %}
+{% if speakers.organisers.size > 0 %}
 {% assign section_has_photos = false %}
-{% for person in site.data.speakers.organisers %}
+{% for person in speakers.organisers %}
   {% if person.photo %}{% assign section_has_photos = true %}{% endif %}
 {% endfor %}
 <section class="mb-5">
   <h2 class="h4 mb-4">{{ strings.people.organisers }}</h2>
   <div class="row g-4">
-    {% for speaker in site.data.speakers.organisers %}
+    {% for speaker in speakers.organisers %}
       <div class="col-6 col-md-4 col-lg-3">
         <div class="speaker-card{% unless section_has_photos %} speaker-card--compact{% endunless %}">
           {% if section_has_photos %}
