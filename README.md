@@ -75,14 +75,38 @@ $headings-font-weight: 600;
 
 ## Local Development
 
+For more instructions on installing mise, check [https://mise.jdx.dev/installing-mise.html](https://mise.jdx.dev/installing-mise.html)
+
 ```bash
+# Install mise
+curl https://mise.run | sh
+
+# Either run this or the command that mise suggests post install
+echo 'eval "$(~/.local/bin/mise activate zsh)"' >> ~/.zshrc
+
+source ~/.zshrc
+```
+
+```bash
+git clone https://github.com/ACM-CRE/acm-cre.github.io.git
+cd acm-cre.github.io
+mise trust
+mise install
+
 # Install dependencies
 bundle install
+```
 
+```bash
 # Run local server
 bundle exec jekyll serve
 
 # Visit http://localhost:4000
+```
+
+```bash
+# For making the production build
+bundle exec jekyll build
 ```
 
 ## Deployment
