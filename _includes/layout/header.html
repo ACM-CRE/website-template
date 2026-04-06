@@ -29,7 +29,7 @@ Includes: utilities/language-switcher.html
     <div class="container">
       <a class="navbar-brand-group" href="{{ lang_prefix | append: '/' | relative_url }}">
         <div class="navbar-logos">
-          <img src="{{ '/assets/images/organisers/logo-ashoka.svg' | relative_url }}" alt="Ashoka University">
+          <img src="{{ site.data.config.organisers.host.logo | relative_url }}" alt="{{ site.data.config.organisers.host.name }}">
           <img src="{{ '/assets/images/organisers/acm-isigcse-768x256.jpg' | relative_url }}" alt="ACM iSIGCSE">
         </div>
         <span class="navbar-divider"></span>

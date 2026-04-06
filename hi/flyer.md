@@ -6,7 +6,7 @@ permalink: /hi/flyer/
 ---
 
 <div class="flyer-logos">
-  <img src="{{ '/assets/images/organisers/logo-ashoka.svg' | relative_url }}" alt="अशोका विश्वविद्यालय">
+  <img src="{{ site.data.config.organisers.host.logo | relative_url }}" alt="{{ site.data.config.organisers.host.name }}">
   <img src="{{ '/assets/images/organisers/acm-isigcse-768x256.jpg' | relative_url }}" alt="ACM iSIGCSE">
   <img src="{{ '/assets/images/organisers/acm-india-council.svg' | relative_url }}" alt="ACM India Council">
   <img src="{{ '/assets/images/organisers/acm-sigcse.png' | relative_url }}" alt="ACM SIGCSE">
@@ -28,7 +28,7 @@ permalink: /hi/flyer/
   </div>
   <div class="flyer-detail">
     <span class="flyer-detail-label">स्थान</span>
-    <span class="flyer-detail-value">अशोका विश्वविद्यालय, सोनीपत</span>
+    <span class="flyer-detail-value">{{ site.data.config.site.location.name }}</span>
   </div>
   <div class="flyer-detail">
     <span class="flyer-detail-label">शुल्क</span>
@@ -64,5 +64,5 @@ permalink: /hi/flyer/
 </div>
 
 <div class="flyer-footer">
-  आयोजक: अशोका विश्वविद्यालय और ACM India iSIGCSE
+  आयोजक: {{ site.data.config.organisers.host.name }} और ACM India iSIGCSE
 </div>

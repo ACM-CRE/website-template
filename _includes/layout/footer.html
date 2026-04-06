@@ -23,8 +23,8 @@ Assets:
   <div class="container">
     <div class="footer-organisers">
       <div class="footer-organisers-logos">
-        <a href="https://ashoka.edu.in" target="_blank" rel="noopener" title="Ashoka University">
-          <img src="{{ '/assets/images/organisers/logo-ashoka.svg' | relative_url }}" alt="Ashoka University" loading="lazy">
+        <a href="{{ site.data.config.organisers.host.url }}" target="_blank" rel="noopener" title="{{ site.data.config.organisers.host.name }}">
+          <img src="{{ site.data.config.organisers.host.logo | relative_url }}" alt="{{ site.data.config.organisers.host.name }}" loading="lazy">
         </a>
         <a href="https://isigcse.acm.org" target="_blank" rel="noopener" title="ACM iSIGCSE">
           <img src="{{ '/assets/images/organisers/acm-isigcse-768x256.jpg' | relative_url }}" alt="ACM iSIGCSE" loading="lazy">

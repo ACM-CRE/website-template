@@ -1,17 +1,17 @@
 # Sponsors for ACM COMPUTE Regional Event
 
 seeking_sponsors: true
-sponsorship_email: "mphasis.lab@ashoka.edu.in"
+sponsorship_email: "sponsors@example.edu"
 
 tiers:
   - name: Sponsors
     sponsors:
-      - name: "Mphasis"
-        logo: "/assets/images/sponsors/mphasis_f1_logo.png"
-        url: "https://www.mphasis.com"
+      - name: "Example Sponsor"
+        logo: "/assets/images/sponsors/sponsor-placeholder.svg"
+        url: "https://example.com"
 
   - name: Academic Partners
     sponsors:
-      - name: "Ashoka University"
-        logo: "/assets/images/organisers/logo-ashoka.svg"
-        url: "https://ashoka.edu.in"
+      - name: "Your University"
+        logo: "/assets/images/organisers/host-logo.svg"
+        url: "https://example.edu"

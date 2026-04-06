@@ -1,6 +1,6 @@
 # ACM COMPUTE Regional Event Template
 
-A Jekyll template for ACM COMPUTE Regional Events. Fork this repository to create your own regional event website.
+A Jekyll template for ACM COMPUTE Regional Events. Use this template to create your own regional event website.
 
 <p>
   <img src="assets/images/home_en.png" alt="Homepage (English)" width="49%">
@@ -16,129 +16,37 @@ A Jekyll template for ACM COMPUTE Regional Events. Fork this repository to creat
 - **Data-driven** — configure everything via YAML files
 - **Mobile-first** responsive design
 
+## Documentation
+
+For complete setup instructions, customisation guides, and deployment information, visit:
+
+**[https://acm-cre.github.io/docs/](https://acm-cre.github.io/docs/)**
+
 ## Quick Start
 
-### 1. Fork this repository
+1. Click "Use this template" to create your own repository
+2. Configure your event in `_data/config/` and `_data/content/`
+3. Replace placeholder images in `assets/images/organisers/`
+4. Deploy to GitHub Pages
 
-Click the "Fork" button to create your own copy.
-
-### 2. Deploy to GitHub Pages
-
-Run `./scripts/deploy.sh` — see [Deployment](#deployment) for setup details.
-
-### 3. Configure your event
-
-Edit the files in `_data/` to customize:
-
-| File | Purpose |
-|------|---------|
-| `_data/site.yml` | Event name, date, location, social links |
-| `_data/schedule.yml` | Event schedule and sessions |
-| `_data/speakers.yml` | Speaker information |
-| `_data/sponsors.yml` | Sponsor tiers and logos |
-| `_data/navigation.yml` | Navigation menu items |
-| `_data/strings/en.yml` | English UI strings |
-| `_data/strings/hi.yml` | Hindi UI strings |
-
-### 4. Add your images
-
-Place images in:
-
-```
-assets/images/
-├── logo.png              # Site logo (recommended: 200x50px)
-├── hero.jpg              # Hero background (recommended: 1920x800px)
-├── favicon.png           # Favicon (recommended: 32x32px)
-├── apple-touch-icon.png  # iOS icon (recommended: 180x180px)
-├── og-default.png        # Social sharing image (recommended: 1200x630px)
-├── speakers/             # Speaker photos (recommended: 400x400px)
-│   ├── jane-doe.jpg
-│   └── john-smith.jpg
-└── sponsors/             # Sponsor logos (recommended: max 200px wide)
-    ├── techcorp.png
-    └── dataco.png
-```
-
-### 5. Customize styling
-
-Edit `_sass/_variables.scss` to change:
-
-```scss
-// Brand colours
-$primary: #0072BC;    // Change to your brand colour
-$secondary: #6c757d;
-
-// Typography
-$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-$headings-font-weight: 600;
-```
-
-## Local Development
-
-For more instructions on installing mise, check [https://mise.jdx.dev/installing-mise.html](https://mise.jdx.dev/installing-mise.html)
-
-```bash
-# Install mise
-curl https://mise.run | sh
-
-# Either run this or the command that mise suggests post install
-echo 'eval "$(~/.local/bin/mise activate zsh)"' >> ~/.zshrc
-
-source ~/.zshrc
-```
-
-```bash
-git clone https://github.com/ACM-CRE/acm-cre.github.io.git
-cd acm-cre.github.io
-mise trust
-mise install
-
-# Install dependencies
-bundle install
-```
-
-```bash
-# Run local server
-bundle exec jekyll serve
-
-# Visit http://localhost:4000
-```
-
-```bash
-# For making the production build
-bundle exec jekyll build
-```
-
-## Deployment
-
-Deploy to GitHub Pages using the provided script:
-
-```bash
-./scripts/deploy.sh
-```
-
-**First-time setup:**
-1. Run the deploy script
-2. Go to **GitHub repo → Settings → Pages**
-3. Under "Source", select **Deploy from a branch**
-4. Select **gh-pages** branch and **/ (root)**
-5. Save
-
-The script builds the site and pushes to the `gh-pages` branch. Run it whenever you want to publish changes.
+See the [documentation](https://acm-cre.github.io/docs/) for detailed instructions.
 
 ## Project Structure
 
 ```
 ├── _config.yml           # Jekyll configuration
 ├── _data/
-│   ├── site.yml          # Event configuration
-│   ├── navigation.yml    # Nav menu items
-│   ├── schedule.yml      # Event schedule
-│   ├── speakers.yml      # Speaker data
-│   ├── sponsors.yml      # Sponsor data
-│   └── strings/
-│       ├── en.yml        # English UI strings
-│       └── hi.yml        # Hindi UI strings
+│   ├── config/           # Site and event configuration
+│   │   ├── site.yml      # Event name, date, location, social links
+│   │   ├── navigation.yml
+│   │   └── organisers.yml
+│   ├── content/          # Event content
+│   │   ├── schedule.yml
+│   │   ├── sponsors.yml
+│   │   └── speakers/
+│   └── strings/          # UI translations
+│       ├── en.yml
+│       └── hi.yml
 ├── _includes/
 │   ├── layout/           # Header, footer, head
 │   ├── components/       # Schedule, speakers, sponsors
@@ -155,6 +63,9 @@ The script builds the site and pushes to the `gh-pages` branch. Run it whenever 
 ├── assets/
 │   ├── css/
 │   ├── images/
+│   │   ├── organisers/   # Host and partner logos
+│   │   ├── sponsors/     # Sponsor logos
+│   │   ├── speakers/     # Speaker photos
 │   │   └── flyers/       # Flyer preview images
 │   └── downloads/        # Downloadable PDFs (flyers)
 ├── hi/                   # Hindi pages
@@ -162,11 +73,6 @@ The script builds the site and pushes to the `gh-pages` branch. Run it whenever 
 ├── 404.html              # Error page
 └── robots.txt            # Search engine config
 ```
-
-## Documentation
-
-- [Internationalization (i18n)](docs/i18n.md) — adding and managing languages
-- [Customisation Guide](docs/customisation.md) — colours, schedule, speakers, sponsors, flyers
 
 ## License
 
@@ -181,4 +87,4 @@ Built with:
 
 ---
 
-Made with ♥ for the ACM COMPUTE community
+Made with care for the ACM COMPUTE community

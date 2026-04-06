@@ -5,29 +5,29 @@ date_display: "Saturday, March 21, 2026"
 time: "9:30 AM - 6:00 PM"
 
 location:
-  name: "Ashoka University"
-  address: "Plot No. 2, Rajiv Gandhi Education City, NCR, P.O. Rai, Sonepat, Haryana 131029, India"
-  url: "https://ashoka.edu.in"
-  map_url: "https://maps.app.goo.gl/hFfPGfygQvX7d7oy9"
-  map_embed_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.321695804531!2d77.09886841147787!3d28.946988575392318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dae77eed4d41f%3A0x78a0bc68e5af467!2sAshoka%20University!5e1!3m2!1sen!2sin!4v1772571901772!5m2!1sen!2sin"
+  name: "Your University"
+  address: "123 University Street, City, State 12345"
+  url: "https://example.edu"
+  map_url: "https://maps.app.goo.gl/example"
+  map_embed_url: ""
 
 accommodation:
-  available: true
-  name: "IIT Delhi Guest House"
-  location: "IIT-D Sonipat Campus"
-  price: "INR 1,500 per night"
+  available: false
+  name: "Nearby Hotel Name"
+  location: "Near Campus"
+  price: "Contact for rates"
 
 registration:
   free: true
-  form_url: "https://tally.so/r/LZdjdJ"
+  form_url: "https://example.com/register"
 
 social:
-  email: "mphasis.lab@ashoka.edu.in"
+  email: "contact@example.edu"
   isigcse_website: "https://isigcse.acm.org/home/"
   isigcse_twitter: "https://x.com/isigcse"
-  ashoka_website: "https://ashoka.edu.in"
-  ashoka_twitter: "https://x.com/AshokaUniv"
-  ashoka_instagram: "https://www.instagram.com/ashokauniv/"
+  host_website: "https://example.edu"
+  host_twitter: "https://x.com/YourUniversity"
+  host_instagram: "https://www.instagram.com/youruniversity/"
   icons:
     github: "/assets/images/social/github.svg"
 

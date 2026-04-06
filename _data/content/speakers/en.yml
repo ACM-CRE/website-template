@@ -1,57 +1,28 @@
 # People for ACM COMPUTE Regional Event
+# Replace with your event's speakers, facilitators, and organisers
 
 # keynote:
-#   - id: keynote-tba
-#     name: "To Be Announced"
-#     affiliation: "COMPUTE Community"
-#     # photo: "/assets/images/speakers/keynote.jpg"
+#   - id: keynote-speaker
+#     name: "Keynote Speaker Name"
+#     affiliation: "Institution"
+#     photo: "/assets/images/speakers/keynote.jpg"
 
 facilitators:
-  - id: mrityunjay-kumar
-    name: "Mrityunjay Kumar"
-    affiliation: "BITS Pilani"
-    photo: "/assets/images/speakers/mrityunjay-kumar.png"
+  - id: facilitator-1
+    name: "Facilitator One"
+    affiliation: "University A"
+    # photo: "/assets/images/speakers/facilitator-1.jpg"
 
-  - id: prajish-prasad
-    name: "Prajish Prasad"
-    affiliation: "FLAME University"
-    # photo: "/assets/images/speakers/prajish-prasad.jpg"
-
-  - id: shitanshu-mishra
-    name: "Shitanshu Mishra"
-    affiliation: "UNESCO MGIEP"
-    # photo: "/assets/images/speakers/shitanshu-mishra.jpg"
-
-  - id: viraj-kumar
-    name: "Viraj Kumar"
-    affiliation: "IISc Bangalore"
-    photo: "/assets/images/speakers/viraj-kumar.png"
+  - id: facilitator-2
+    name: "Facilitator Two"
+    affiliation: "University B"
+    # photo: "/assets/images/speakers/facilitator-2.jpg"
 
 organisers:
-  - id: mrityunjay-kumar
-    name: "Mrityunjay Kumar"
-    affiliation: "BITS Pilani WILP"
+  - id: organiser-1
+    name: "Organiser One"
+    affiliation: "Your University"
 
-  - id: prajish-prasad
-    name: "Prajish Prasad"
-    affiliation: "FLAME University"
-
-  - id: manu-awasthi
-    name: "Manu Awasthi"
-    affiliation: "IIT Gandhinagar"
-
-  - id: anirban-sen
-    name: "Anirban Sen"
-    affiliation: "Ashoka University"
-
-  - id: aalok-thakkar
-    name: "Aalok Thakkar"
-    affiliation: "Ashoka University"
-
-  - id: nikhil-raj
-    name: "Nikhil Raj"
-    affiliation: "Ashoka University"
-
-  - id: deepraj-pandey
-    name: "Deepraj Pandey"
-    affiliation: "Ashoka University"
+  - id: organiser-2
+    name: "Organiser Two"
+    affiliation: "Partner Institution"

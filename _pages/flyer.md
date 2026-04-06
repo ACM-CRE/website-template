@@ -6,7 +6,7 @@ permalink: /flyer/
 ---
 
 <div class="flyer-logos">
-  <img src="{{ '/assets/images/organisers/logo-ashoka.svg' | relative_url }}" alt="Ashoka University">
+  <img src="{{ site.data.config.organisers.host.logo | relative_url }}" alt="{{ site.data.config.organisers.host.name }}">
   <img src="{{ '/assets/images/organisers/acm-isigcse-768x256.jpg' | relative_url }}" alt="ACM iSIGCSE">
   <img src="{{ '/assets/images/organisers/acm-india-council.svg' | relative_url }}" alt="ACM India Council">
   <img src="{{ '/assets/images/organisers/acm-sigcse.png' | relative_url }}" alt="ACM SIGCSE">
@@ -28,7 +28,7 @@ permalink: /flyer/
   </div>
   <div class="flyer-detail">
     <span class="flyer-detail-label">Venue</span>
-    <span class="flyer-detail-value">Ashoka University, Sonipat</span>
+    <span class="flyer-detail-value">{{ site.data.config.site.location.name }}</span>
   </div>
   <div class="flyer-detail">
     <span class="flyer-detail-label">Fee</span>
@@ -64,5 +64,5 @@ permalink: /flyer/
 </div>
 
 <div class="flyer-footer">
-  Organised by Ashoka University & ACM India iSIGCSE
+  Organised by {{ site.data.config.organisers.host.name }} & ACM India iSIGCSE
 </div>

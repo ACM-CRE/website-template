@@ -1,8 +1,7 @@
-# Schedule for ACM COMPUTE Regional Event at Ashoka University
-# Saturday, March 21, 2026 | 9:30 AM - 6:00 PM
+# Schedule for ACM COMPUTE Regional Event
+# Update the date, times, and session details for your event
 #
-# Note: No formal tea breaks. Tea and snacks available at 12:00 and 15:30
-# during workshop sessions (grab and head back).
+# Session types: break, keynote, discussion, workshop, ceremony
 
 - time: "09:30"
   end_time: "10:00"
@@ -20,19 +19,18 @@
   end_time: "11:30"
   title: "Discussion Forum"
   type: discussion
-  description: "We will pick pertinent topics, collect feedback from attendees, and discuss in groups. The idea is to frame problems and suggest solutions and collaborations that can address them—regionally and nationally. No presentations, only discussions and problem-solving. Every attendee should leave with an idea or problem they can use in the workshop sessions."
+  description: "Facilitated discussion on CS education topics. Attendees share challenges and ideas in small groups."
   facilitators:
-    - mrityunjay-kumar
-    - prajish-prasad
+    - facilitator-1
+    - facilitator-2
 
 - time: "11:30"
   end_time: "13:30"
   title: "Educator Workshop"
   type: workshop
-  description: "For CS educators who have ideas on creative ways of teaching in their classroom, or have already tried these, and would like to polish it into an experience report. The workshop will help structure the report and answer specific questions. Hands-on, group-based."
+  description: "Hands-on workshop for CS educators to develop teaching ideas and experience reports."
   facilitators:
-    - prajish-prasad
-    - mrityunjay-kumar
+    - facilitator-1
 
 - time: "13:30"
   end_time: "15:00"
@@ -44,13 +42,12 @@
   end_time: "17:30"
   title: "Researcher Workshop"
   type: workshop
-  description: "For CSEd researchers (current or budding) working on a research paper submission, or have ideas to design a study around. They may be starting from a previously rejected paper, a new study they are engaged in, or just have an idea that needs input. The workshop will help prepare for submission to COMPUTE or similar conferences and journals."
+  description: "Workshop for CS education researchers working on paper submissions or study designs."
   facilitators:
-    - shitanshu-mishra
-    - prajish-prasad
+    - facilitator-2
 
 - time: "17:30"
   end_time: "18:00"
   title: "Closing"
   type: ceremony
-  description: "Key takeaways from the event, introduction to the upcoming edition of COMPUTE, and wrap-up."
+  description: "Key takeaways from the event and wrap-up."

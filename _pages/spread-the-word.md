@@ -60,7 +60,7 @@ alternate:
   <div class="position-relative">
     <pre id="email-body">Dear colleagues,
 
-I am writing to invite you to {{ site.data.config.site.event_name }}, a one-day gathering for CS educators and researchers hosted by Ashoka University and ACM India iSIGCSE.
+I am writing to invite you to {{ site.data.config.site.event_name }}, a one-day gathering for CS educators and researchers hosted by {{ site.data.config.organisers.host.name }} and ACM India iSIGCSE.
 
 Date: {{ site.data.config.site.date_display }}
 Time: {{ site.data.config.site.time }}
@@ -107,7 +107,7 @@ Free registration: {{ site.url }}/register/
   <div class="position-relative">
     <pre id="linkedin-post">{{ site.data.config.site.event_name }} is a one-day regional gathering for CS educators and researchers.
 
-Hosted by Ashoka University and ACM India iSIGCSE.
+Hosted by {{ site.data.config.organisers.host.name }} and ACM India iSIGCSE.
 
 {{ site.data.config.site.date_display }}
 {{ site.data.config.site.location.name }}
