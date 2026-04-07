@@ -20,6 +20,14 @@ task :deploy do
     abort "error: Must run from repository root (where _config.yml is located)"
   end
 
+  # Sanity-check _config.yml has been customised away from template defaults
+  config = File.read("_config.yml")
+  if config.include?("CHANGE-ME") || config.match?(/^url:\s*["']https:\/\/acm-cre\.github\.io["']/)
+    abort "error: _config.yml still contains template defaults for `url` / `baseurl`.\n" \
+          "       Update them for your repository before deploying.\n" \
+          "       See https://acm-cre.github.io/docs/customisation/event-details.html"
+  end
+
   # Warn about uncommitted changes
   unless `git status --porcelain`.empty?
     puts "warning: You have uncommitted changes. Consider committing before deploying."

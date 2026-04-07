@@ -1,6 +1,10 @@
 title: "ACM COMPUTE Regional"
 description: "Regional event for computing educators and researchers"
-url: "https://acm-cre.github.io"
+
+# REQUIRED: change `url` and `baseurl` for your repository before deploying.
+# Wrong values cause the deployed site to load with broken CSS, JS and images.
+# See: https://acm-cre.github.io/docs/customisation/event-details.html
+url: "https://CHANGE-ME.github.io"
 baseurl: ""
 
 lang: en
